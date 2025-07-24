@@ -9,7 +9,32 @@ This repository provides the code for the paper **EndoMamba: An Efficient Founda
 
 ---
 
-## 🔍 Key Features
+## � Quick Start
+
+如果您遇到 `libc10.so: cannot open shared object file` 错误，请使用以下方法之一：
+
+### 方法 1: 使用环境设置脚本
+```bash
+source setup_environment.sh
+cd videomamba/tests
+python endomamba_demo.py
+```
+
+### 方法 2: 使用 Python 运行器
+```bash
+python run_endomamba.py
+```
+
+### 方法 3: 手动设置环境变量
+```bash
+export LD_LIBRARY_PATH="$(python -c 'import torch; import os; print(os.path.join(os.path.dirname(torch.__file__), "lib"))'):$LD_LIBRARY_PATH"
+cd videomamba/tests
+python endomamba_demo.py
+```
+
+---
+
+## �🔍 Key Features
 
 - Foundation model designed for **real-time endoscopic video analysis**
 - Backbone employs **spatial bidirectional scanning** and **temporal causal scanning** for:
