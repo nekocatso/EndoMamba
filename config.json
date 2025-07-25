@@ -1,0 +1,6 @@
+{
+  "model_path": "/root/lanyun-tmp/EndoMamba-main/pretrained_models",
+  "dataset_path": "/root/lanyun-tmp/EndoMamba-main/datasets",
+  "output_path": "/root/lanyun-tmp/EndoMamba-main/outputs",
+  "wandb_path": "/root/lanyun-tmp/EndoMamba-main/outputs/logs/wandb"
+}

@@ -1,7 +1,15 @@
 from regex import F
 import torch
 import sys, os
-sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), "..")))
+
+# 添加项目根目录到 Python 路径
+current_dir = os.path.dirname(__file__)
+videomamba_dir = os.path.abspath(os.path.join(current_dir, ".."))
+project_root = os.path.abspath(os.path.join(videomamba_dir, ".."))
+
+sys.path.insert(0, project_root)
+sys.path.insert(0, videomamba_dir)
+
 from video_sm.models.endomamba import *
 from _mamba.mamba_ssm.utils.generation import InferenceParams
 
