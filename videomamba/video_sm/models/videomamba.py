@@ -28,11 +28,17 @@ except ImportError:
     RMSNorm, layer_norm_fn, rms_norm_fn = None, None, None
 
 
-MODEL_PATH = '/mnt/tqy/checkpoints/videomae'
+import os
+from pathlib import Path
+
+# 获取项目根目录
+PROJECT_ROOT = Path(__file__).parent.parent.parent.parent.absolute()
+MODEL_PATH = os.path.join(PROJECT_ROOT, 'pretrained_models')
+
 _MODELS = {
-    "videomamba_t16_in1k": os.path.join(MODEL_PATH, "videomamba_t16_in1k_res224.pth"),
-    "videomamba_s16_in1k": os.path.join(MODEL_PATH, "videomamba_s16_in1k_res224.pth"),
-    "videomamba_m16_in1k": os.path.join(MODEL_PATH, "videomamba_m16_in1k_res224.pth"),
+    "videomamba_t16_in1k": os.path.join(MODEL_PATH, "endomamba/endomamba_small_b48_seqlen16_withteacher_MIX12/checkpoint-499.pth"),
+    "videomamba_s16_in1k": os.path.join(MODEL_PATH, "endomamba/endomamba_small_b48_seqlen16_withteacher_MIX12/checkpoint-499.pth"),
+    "videomamba_m16_in1k": os.path.join(MODEL_PATH, "endomamba/endomamba_small_b48_seqlen16_withteacher_MIX12/checkpoint-499.pth"),
 }
 
 __all__ = [
@@ -419,8 +425,11 @@ def load_state_dict(model, state_dict, center=True):
             time_dim = state_dict_3d[k].shape[2]
             state_dict[k] = inflate_weight(state_dict[k], time_dim, center=center)
     
-    del state_dict['head.weight']
-    del state_dict['head.bias']
+    # Remove head weights if they exist
+    if 'head.weight' in state_dict:
+        del state_dict['head.weight']
+    if 'head.bias' in state_dict:
+        del state_dict['head.bias']
     msg = model.load_state_dict(state_dict, strict=False)
     print(msg)
 
