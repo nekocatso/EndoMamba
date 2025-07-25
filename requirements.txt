@@ -7,7 +7,7 @@ torchvision==0.19.1+cu121
 torchaudio==2.4.1+cu121
 
 # 深度学习框架和工具
-timm>=0.9.7
+timm==0.6.13
 einops>=0.6.1
 transformers>=4.21.0
 triton>=2.0.0

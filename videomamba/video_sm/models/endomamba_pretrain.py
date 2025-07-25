@@ -1,4 +1,10 @@
 import os
+import sys
+# 添加项目根目录到 Python 路径
+project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '../../..'))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
+
 from sympy import N
 import torch
 import torch.nn as nn
@@ -11,9 +17,10 @@ from config.paths import MODEL_PATH, MODEL_CONFIGS
 from einops import rearrange
 from timm.models.vision_transformer import _cfg
 from timm.models.registry import register_model
-from timm.models.layers import trunc_normal_
+from timm.models.layers.weight_init import trunc_normal_
 
-from timm.models.layers import DropPath, to_2tuple
+from timm.models.layers.drop import DropPath
+from timm.models.layers.helpers import to_2tuple
 from timm.models.vision_transformer import _load_weights
 
 import math
