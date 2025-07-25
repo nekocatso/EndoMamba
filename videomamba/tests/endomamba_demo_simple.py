@@ -16,10 +16,10 @@ def test_imports():
     
     try:
         # 测试配置模块
-        from config.paths import PathConfig, MODEL_PATH, DATASET_PATH
+        from config.paths import PathConfig
         print("✅ 配置模块导入成功")
-        print(f"  模型路径: {MODEL_PATH}")
-        print(f"  数据集路径: {DATASET_PATH}")
+        print(f"  模型路径: {PathConfig().get_model_path()}")
+        print(f"  数据集路径: {PathConfig().get_dataset_path()}")
         
         # 测试 EndoMamba 基础模块
         from video_sm.models.endomamba import EndoMamba

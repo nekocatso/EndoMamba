@@ -107,20 +107,25 @@ DATASET_CONFIGS = {
     },
 }
 
-# 模型配置字典
+# 模型配置字典（带路径验证）
+def _validate_path(path):
+    if not os.path.exists(path):
+        print(f"⚠️ 警告: 模型路径不存在: {path}")
+    return path
+
 MODEL_CONFIGS = {
-    'videomamba_s16_in1k': os.path.join(
+    'videomamba_s16_in1k': _validate_path(os.path.join(
         config.model_path, 
         'endomamba/endomamba_small_b48_seqlen16_withteacher_MIX12/checkpoint-499.pth'
-    ),
-    'videomamba_t16_in1k': os.path.join(
+    )),
+    'videomamba_t16_in1k': _validate_path(os.path.join(
         config.model_path,
         'endomamba/endomamba_tiny/checkpoint.pth'
-    ),
-    'videomamba_m16_in1k': os.path.join(
+    )),
+    'videomamba_m16_in1k': _validate_path(os.path.join(
         config.model_path,
         'endomamba/endomamba_medium/checkpoint.pth'
-    ),
+    )),
 }
 
 def get_model_config(model_name: str) -> str:

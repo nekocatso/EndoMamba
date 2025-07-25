@@ -6,7 +6,7 @@ from functools import partial
 from torch import Tensor
 from typing import Optional, List
 import torch.utils.checkpoint as checkpoint
-from config.paths import MODEL_PATH, MODEL_CONFIGS
+from config.paths import MODEL_CONFIGS
 
 from einops import rearrange
 from timm.models.vision_transformer import _cfg
