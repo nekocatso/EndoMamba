@@ -207,6 +207,9 @@ def main(args):
     elif args.mix_datasets == "MIX12":
         args.mix_datasets = ["Colonoscopic","SUN-SEG","LDPolypVideo","Hyper-Kvasir","Kvasir-Capsule","CholecT45","EndoFM",
                             "GLENDAv1", "gastric_real", "EndoMapper", "ROBUST-MIS", "Ours-Porcine"]
+    else:
+        # 处理单个数据集的情况
+        args.mix_datasets = [args.mix_datasets]
     dataset_train = build_pretraining_mixed_dataset(args)
 
 

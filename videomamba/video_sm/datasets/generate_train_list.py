@@ -1,9 +1,9 @@
 import os
 
 # 设置目标目录和输出文件路径
-data_dir = "/mnt/tqy/GLENDA_v1.0/"
-root_dir = "/mnt/tqy/GLENDA_v1.0/"
-output_file = root_dir + "train_list.txt"
+data_dir = "/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Colonoscopic"
+root_dir = "/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Colonoscopic"
+output_file = os.path.join(root_dir, "train_list.txt")
 
 # 遍历目录并获取所有 .mp4 文件
 def get_mp4_files(directory):

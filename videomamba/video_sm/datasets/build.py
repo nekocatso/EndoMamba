@@ -17,75 +17,75 @@ from .lvu import LVU
 DATASETS_CONFIG = {
     "Colonoscopic":
         {
-        'root': '/mnt/tqy/Colonoscopic/',
-        'setting': '/mnt/tqy/Colonoscopic/train_list.txt',
-        'prefix': '/mnt/tqy/Colonoscopic/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Colonoscopic/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Colonoscopic/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Colonoscopic/',
         },
     "LDPolypVideo": 
         {
-        'root': '/mnt/tqy/LDPolypVideo/',
-        'setting': '/mnt/tqy/LDPolypVideo/train_list.txt',
-        'prefix': '/mnt/tqy/LDPolypVideo/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/LDPolypVideo/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/LDPolypVideo/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/LDPolypVideo/',
         },
     "Hyper-Kvasir":
         {
-        'root': '/mnt/tqy/Hyper-Kvasir/',
-        'setting': '/mnt/tqy/Hyper-Kvasir/train_list.txt',
-        'prefix': '/mnt/tqy/Hyper-Kvasir/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Hyper-Kvasir/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Hyper-Kvasir/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Hyper-Kvasir/',
         },
     "Kvasir-Capsule":
         {
-        'root': '/mnt/tqy/Kvasir-Capsule/',
-        'setting': '/mnt/tqy/Kvasir-Capsule/train_list.txt',
-        'prefix': '/mnt/tqy/Kvasir-Capsule/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Kvasir-Capsule/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Kvasir-Capsule/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/Kvasir-Capsule/',
         },
     "CholecT45": 
         {
-        'root': '/mnt/tqy/CholecT45/',
-        'setting': '/mnt/tqy/CholecT45/train_list.txt',
-        'prefix': '/mnt/tqy/CholecT45/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/surgery/CholecT45/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/surgery/CholecT45/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/surgery/CholecT45/',
         },
     "EndoFM":
         {
-        'root': '/mnt/tqy/EndoFM/',
-        'setting': '/mnt/tqy/EndoFM/train_list.txt',
-        'prefix': '/mnt/tqy/EndoFM/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/EndoFM/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/EndoFM/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/EndoFM/',
         },
     "SUN-SEG":
         {
-        'root': '/mnt/tqy/SUN-SEG/',
-        'setting': '/mnt/tqy/SUN-SEG/train_list.txt',
-        'prefix': '/mnt/tqy/SUN-SEG/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/SUN-SEG/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/SUN-SEG/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/SUN-SEG/',
         },
     "GLENDAv1":
         {
-        'root': '/mnt/tqy/GLENDA_v1.0/',
-        'setting': '/mnt/tqy/GLENDA_v1.0/train_list.txt',
-        'prefix': '/mnt/tqy/GLENDA_v1.0/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/GLENDA_v1.0/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/GLENDA_v1.0/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/GLENDA_v1.0/',
         },
     "gastric_real":
         {
-        'root': '/mnt/tqy/gastroc_real/',
-        'setting': '/mnt/tqy/gastroc_real/train_list.txt',
-        'prefix': '/mnt/tqy/gastroc_real/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/gastroc_real/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/gastroc_real/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/gastroc_real/',
         },
     "EndoMapper":
         {
-        'root': '/mnt/tqy/EndoMapper/',
-        'setting': '/mnt/tqy/EndoMapper/train_list.txt',
-        'prefix': '/mnt/tqy/EndoMapper/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/EndoMapper/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/EndoMapper/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/EndoMapper/',
         },
     "ROBUST-MIS":
         {
-        'root': '/mnt/tqy/ROBUST-MIS/',
-        'setting': '/mnt/tqy/ROBUST-MIS/train_list.txt',
-        'prefix': '/mnt/tqy/ROBUST-MIS/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/surgery/ROBUST-MIS/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/surgery/ROBUST-MIS/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/surgery/ROBUST-MIS/',
         },
     "Ours-Porcine":
         {
-        'root': '/mnt/tqy/ours_porcine_clips/',
-        'setting': '/mnt/tqy/ours_porcine_clips/train_list.txt',
-        'prefix': '/mnt/tqy/ours_porcine_clips/',
+        'root': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/ours_porcine_clips/',
+        'setting': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/ours_porcine_clips/train_list.txt',
+        'prefix': '/root/lanyun-tmp/EndoMamba-main/datasets/endoscopy/ours_porcine_clips/',
         },
 }
 

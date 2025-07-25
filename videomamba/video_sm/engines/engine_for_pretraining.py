@@ -58,7 +58,13 @@ def train_one_epoch(model: torch.nn.Module, data_loader: Iterable, optimizer: to
             
             if teacher_model is not None:
                 ft = teacher_model(videos).detach()
-                B, _, C = ft.shape
+                # Handle different output shapes from teacher model
+                if len(ft.shape) == 2:  # [B, C] - only cls token
+                    B, C = ft.shape
+                    # Repeat cls token for all positions to match patch dimensions
+                    ft = ft.unsqueeze(1).repeat(1, bool_masked_pos.shape[1], 1)  # [B, num_patches, C]
+                else:  # [B, seq_len, C] - full sequence
+                    B, _, C = ft.shape
                 ft_vis = ft[~bool_masked_pos].reshape(B, -1, C)
 
         loss = 0
