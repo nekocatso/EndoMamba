@@ -25,8 +25,10 @@ from video_sm.models.endomamba import EndoMamba, inflate_weight
 
 logger = logging.getLogger(__name__)
 
-
-MODEL_PATH = '/data/tqy/endomamba_pretrain/'
+# 动态获取项目根目录下的预训练模型路径
+current_dir = os.path.dirname(os.path.abspath(__file__))
+project_root = os.path.join(current_dir, '../../../../')
+MODEL_PATH = os.path.join(project_root, 'pretrained_models/endomamba/')
 _MODELS = {
     "videomamba_s16_in1k": os.path.join(MODEL_PATH, "endomamba_small_b48_seqlen16_withteacher_MIX12/checkpoint-499.pth"),
 }
