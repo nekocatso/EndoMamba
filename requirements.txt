@@ -1,7 +1,6 @@
 # Python 3.9, CUDA 12.4, PyTorch 2.4.1+cu121 完整依赖列表
 
 # PyTorch 生态系统 - 核心依赖
---extra-index-url https://download.pytorch.org/whl/cu121
 torch==2.4.1+cu121
 torchvision==0.19.1+cu121
 torchaudio==2.4.1+cu121
@@ -43,8 +42,6 @@ tensorboardX>=2.5.1
 # Mamba 相关依赖
 packaging>=21.0
 ninja>=1.10.0
-causal-conv1d>=1.0.0
-mamba-ssm>=1.0.1
 
 # 医疗图像处理
 medpy>=0.4.0
