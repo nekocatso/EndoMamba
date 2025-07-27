@@ -55,13 +55,18 @@ if __name__ == "__main__":
                         default=0, help='using number of skip-connect, default is num')
     parser.add_argument('--model', type=str,
                         default='endomambaseg_small', help='select one vit model')
-    parser.add_argument('--wandb', type=bool,
-                        default=False, help='using wandb logger')
+    parser.add_argument('--wandb', type=str,
+                        default='False', help='using wandb logger')
     parser.add_argument('--test', action='store_true', help='test the pretrained model')
     parser.add_argument('--pretrained_model_weights', 
                         default="/mnt/tqy/out/segmentation/EndoMamba_NF8_s1/best_model.pth",
                         help='test pretrained model weight')
     args = parser.parse_args()
+    
+    # 正确处理 wandb 参数
+    if isinstance(args.wandb, str):
+        args.wandb = args.wandb.lower() == 'true'
+    
     # print(args)
     # exit(0)
     os.environ["CUDA_VISIBLE_DEVICES"] = args.gpu

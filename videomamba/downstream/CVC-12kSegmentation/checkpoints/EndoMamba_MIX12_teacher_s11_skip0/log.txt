@@ -1,0 +1,21 @@
+[21:50:52.294] Namespace(exp='EndoMamba_MIX12_teacher', root_path='/root/lanyun-tmp/EndoMamba-master/data/CVC-ClinicVideoDB/', dataset='CVC', list_dir='./lists/lists_Synapse', out_dir='/root/lanyun-tmp/EndoMamba-master/videomamba/downstream/CVC-12kSegmentation/checkpoints/', num_classes=2, max_iterations=30000, max_epochs=150, batch_size=1, n_gpu=1, gpu='0', deterministic=1, base_lr=0.0001, img_size=224, seed=11, n_skip=0, model='endomambaseg_small', wandb=True, test=False, pretrained_model_weights='/mnt/tqy/out/segmentation/EndoMamba_NF8_s1/best_model.pth', is_pretrain=True)
+[21:53:03.082] Namespace(exp='EndoMamba_MIX12_teacher', root_path='/root/lanyun-tmp/EndoMamba-master/data/CVC-ClinicVideoDB/', dataset='CVC', list_dir='./lists/lists_Synapse', out_dir='/root/lanyun-tmp/EndoMamba-master/videomamba/downstream/CVC-12kSegmentation/checkpoints/', num_classes=2, max_iterations=30000, max_epochs=150, batch_size=1, n_gpu=1, gpu='0', deterministic=1, base_lr=0.0001, img_size=224, seed=11, n_skip=0, model='endomambaseg_small', wandb=True, test=False, pretrained_model_weights='/mnt/tqy/out/segmentation/EndoMamba_NF8_s1/best_model.pth', is_pretrain=True)
+[21:54:51.260] Namespace(exp='EndoMamba_MIX12_teacher', root_path='/root/lanyun-tmp/EndoMamba-master/data/CVC-ClinicVideoDB/', dataset='CVC', list_dir='./lists/lists_Synapse', out_dir='/root/lanyun-tmp/EndoMamba-master/videomamba/downstream/CVC-12kSegmentation/checkpoints/', num_classes=2, max_iterations=30000, max_epochs=150, batch_size=1, n_gpu=1, gpu='0', deterministic=1, base_lr=0.0001, img_size=224, seed=11, n_skip=0, model='endomambaseg_small', wandb=False, test=False, pretrained_model_weights='/mnt/tqy/out/segmentation/EndoMamba_NF8_s1/best_model.pth', is_pretrain=True)
+[21:54:51.266] 20 iterations per epoch. 3000 max iterations 
+[21:55:24.897] Namespace(exp='EndoMamba_MIX12_teacher', root_path='/root/lanyun-tmp/EndoMamba-master/data/CVC-ClinicVideoDB/', dataset='CVC', list_dir='./lists/lists_Synapse', out_dir='/root/lanyun-tmp/EndoMamba-master/videomamba/downstream/CVC-12kSegmentation/checkpoints/', num_classes=2, max_iterations=30000, max_epochs=150, batch_size=1, n_gpu=1, gpu='0', deterministic=1, base_lr=0.0001, img_size=224, seed=11, n_skip=0, model='endomambaseg_small', wandb=False, test=False, pretrained_model_weights='/mnt/tqy/out/segmentation/EndoMamba_NF8_s1/best_model.pth', is_pretrain=True)
+[21:55:24.903] 20 iterations per epoch. 3000 max iterations 
+[21:55:49.886] Namespace(exp='EndoMamba_MIX12_teacher', root_path='/root/lanyun-tmp/EndoMamba-master/data/CVC-ClinicVideoDB/', dataset='CVC', list_dir='./lists/lists_Synapse', out_dir='/root/lanyun-tmp/EndoMamba-master/videomamba/downstream/CVC-12kSegmentation/checkpoints/', num_classes=2, max_iterations=30000, max_epochs=150, batch_size=1, n_gpu=1, gpu='0', deterministic=1, base_lr=0.0001, img_size=224, seed=11, n_skip=0, model='endomambaseg_small', wandb=False, test=False, pretrained_model_weights='/mnt/tqy/out/segmentation/EndoMamba_NF8_s1/best_model.pth', is_pretrain=True)
+[21:55:49.893] 20 iterations per epoch. 3000 max iterations 
+[22:09:29.084] Namespace(exp='EndoMamba_MIX12_teacher', root_path='/root/lanyun-tmp/EndoMamba-master/data/CVC-ClinicVideoDB/', dataset='CVC', list_dir='./lists/lists_Synapse', out_dir='/root/lanyun-tmp/EndoMamba-master/videomamba/downstream/CVC-12kSegmentation/checkpoints/', num_classes=2, max_iterations=30000, max_epochs=150, batch_size=1, n_gpu=1, gpu='0', deterministic=1, base_lr=0.0001, img_size=224, seed=11, n_skip=0, model='endomambaseg_small', wandb=False, test=False, pretrained_model_weights='/mnt/tqy/out/segmentation/EndoMamba_NF8_s1/best_model.pth', is_pretrain=True)
+[22:09:29.091] 20 iterations per epoch. 3000 max iterations 
+[22:09:46.571] save best model to best_model.pth
+[22:09:54.978] save best model to best_model.pth
+[22:10:03.406] save best model to best_model.pth
+[22:10:29.070] save best model to best_model.pth
+[22:10:37.755] save best model to best_model.pth
+[22:10:46.404] save best model to best_model.pth
+[22:10:54.827] save best model to best_model.pth
+[22:11:20.014] save best model to best_model.pth
+[22:11:37.105] save best model to best_model.pth
+[22:11:54.164] save best model to best_model.pth
+[22:12:02.896] save best model to best_model.pth

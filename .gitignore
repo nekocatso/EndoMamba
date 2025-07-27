@@ -171,3 +171,7 @@ videomamba/downstream/KUMCDetection
 *.pth
 *.pkl
 *.whl
+
+# Data files
+data/CVC-ClinicVideoDB/CVC-ClinicDB
+CVC-ClinicVideoDB.tar
