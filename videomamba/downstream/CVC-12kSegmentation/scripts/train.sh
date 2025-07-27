@@ -1,11 +1,11 @@
 python train.py \
     --exp EndoMamba_MIX12_teacher \
-    --gpu 3 \
+    --gpu 0 \
     --batch_size 1 \
     --model endomambaseg_small \
-    --root_path /path/to/CVC-ClinicVideoDB/ \
+    --root_path /root/lanyun-tmp/EndoMamba-master/data/CVC-ClinicVideoDB/ \
     --seed 11 \
-    --n_skip 0\
+    --n_skip 0 \
     --base_lr 1e-4 \
-    --out_dir /path/to/save/checkpoints/
-    # --wandb False
+    --out_dir /root/lanyun-tmp/EndoMamba-master/videomamba/downstream/CVC-12kSegmentation/checkpoints/ \
+    --wandb False
